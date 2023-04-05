@@ -1,6 +1,7 @@
-import { Binance } from "@thirdweb-dev/chains";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
 import type { AppProps } from "next/app";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { NETWORK } from "../utils/constants";
+import binanceTestnet from "@thirdweb-dev/chains/"
 import { Inter } from "next/font/google";
 import "tailwindcss/tailwind.css";
 
@@ -11,15 +12,13 @@ const inter = Inter({
   display: "swap",
 });
 
-// This is the chain your dApp will work on.
-const activeChain = Binance;
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider supportedChains={[activeChain]} activeChain={activeChain}>
-      <div className={inter.className}>
-        <Component {...pageProps} />
-      </div>
+    <ThirdwebProvider activeChain="binance-testnet">
+      {/* Progress bar when navigating between pages */}
+      
+      {/* Render the actual component (page) */}
+      <Component {...pageProps} />
     </ThirdwebProvider>
   );
 }

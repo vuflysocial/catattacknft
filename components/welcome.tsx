@@ -10,10 +10,10 @@ const Welcome: React.FC = () => {
           className="!bg-clip-text text-transparent"
           style={{
             background:
-              "linear-gradient(73.59deg, #C339AC 42.64%, #CD4CB5 54%, #E173C7 77.46%)",
+              "linear-gradient(to right, #9de7c8, #72c6a7, #49a686, #1f8570)",
           }}
         >
-          Cat Attack
+          Invade of Meloshians
         </span>
       </h1>
       <div className="mx-auto">
@@ -35,7 +35,7 @@ const Welcome: React.FC = () => {
       <div className="flex flex-col items-center">
         <p className="font-semibold">Share the game</p>
         <div className="flex gap-2 mt-3">
-          <a className="border border-[#9D2889] rounded-xl leading-none h-12 w-12 flex items-center justify-center cursor-pointer">
+          <a className="border border-[#72c6a7] rounded-xl leading-none h-12 w-12 flex items-center justify-center cursor-pointer">
             <Image
               src="/socials/twitter.svg"
               width={24}
@@ -43,7 +43,7 @@ const Welcome: React.FC = () => {
               alt="Twitter"
             />
           </a>
-          <a className="border border-[#9D2889] rounded-xl leading-none h-12 w-12 flex items-center justify-center cursor-pointer">
+          <a className="border border-[#72c6a7] rounded-xl leading-none h-12 w-12 flex items-center justify-center cursor-pointer">
             <Image
               src="/socials/facebook.svg"
               width={24}
@@ -51,7 +51,7 @@ const Welcome: React.FC = () => {
               alt="Facebook"
             />
           </a>
-          <a className="border border-[#9D2889] rounded-xl leading-none h-12 w-12 flex items-center justify-center cursor-pointer">
+          <a className="border border-[#72c6a7] rounded-xl leading-none h-12 w-12 flex items-center justify-center cursor-pointer">
             <Image
               src="/socials/instagram.svg"
               width={24}

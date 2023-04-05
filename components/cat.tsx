@@ -20,7 +20,7 @@ const modalText = {
     description: (
       <>
         Enter their wallet address or select a current player to transfer your{" "}
-        <span className="font-bold text-white">Kitten</span> to.
+        <span className="font-bold text-white">Meloshian</span> to.
       </>
     ),
     button: "Send Kitten",
@@ -29,7 +29,7 @@ const modalText = {
     title: "Burn your cat!",
     description: (
       <>
-        Burn your <span className="font-bold text-white">Grumpy Cat</span>.
+        Burn your <span className="font-bold text-white">Wizard Meloshian</span>.
       </>
     ),
     button: "Burn Cat",
@@ -166,7 +166,7 @@ type CatProps = {
   cat: NFT;
 };
 
-const colors = ["#B74AA4", "#4830A4", "#BFA3DA"];
+const colors = ["#8AE6C7", "#64C2A6", "#3E8E79"];
 
 const Cat: React.FC<CatProps> = ({ cat }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -18,7 +18,7 @@ const Cats: React.FC = () => {
   return (
     <div className="flex flex-col items-center w-full">
       <h1 className="font-bold sm:text-6xl text-4xl leading-none text-center tracking-tight">
-        Your cats
+        Your Meloshians
       </h1>
       <p className="my-4 text-gray-500">
         <span className="tracking-wide mr-2">Total Points:</span>
@@ -27,7 +27,7 @@ const Cats: React.FC = () => {
       {badges.length > 0 && (
         <div className="flex flex-col items-center w-full">
           <p className="mt-4 text-gray-500">
-            <span className="tracking-wide mr-2">Cats Destroyed:</span>
+            <span className="tracking-wide mr-2">Meloshians Destroyed:</span>
             <span className="text-white">{badges[0].quantityOwned}</span>
           </p>
           <div className="flex flex-wrap max-w-xs gap-2 my-4 items-center justify-center">
@@ -52,11 +52,11 @@ const Cats: React.FC = () => {
           <div>
             <p className="my-4 text-gray-500">
               <span className="text-white">
-                All your cats have been destroyed!
+                All your Meloshians have been destroyed!
               </span>
               <br />
               <span className="tracking-wide">
-                Claim a new kitten to keep playing
+                Claim a new Meloshian to keep playing
               </span>
             </p>
             <p className="text-gray-500"></p>

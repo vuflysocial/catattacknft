@@ -10,7 +10,7 @@ type GameContextType = {
 };
 
 export const GameContext = createContext<GameContextType>({
-  targetAddress: "",
+  targetAddress: "0x69eE710D7212246fca66be5228f7D0dF4EA919a2",
   setTargetAddress: () => {},
   refetch: () => {},
   nfts: [],

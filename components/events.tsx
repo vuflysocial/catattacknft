@@ -76,7 +76,7 @@ const Events: React.FC = () => {
         className="font-bold text-3xl leading-none !bg-clip-text text-transparent"
         style={{
           background:
-            "linear-gradient(73.59deg, #C339AC 42.64%, #CD4CB5 54%, #E173C7 77.46%)",
+            "linear-gradient(to right, #9de7c8, #72c6a7, #49a686, #1f8570)",
         }}
       >
         Game events
