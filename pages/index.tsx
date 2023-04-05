@@ -11,7 +11,7 @@ import { useState } from "react";
 import Header from "../components/header";
 import Events from "../components/events";
 import Welcome from "../components/welcome";
-import ClaimKitten from "../components/claim-kitten";
+import ClaimMeloshians from "../components/claim-meloshians";
 import { CONTRACT_ADDR } from "../utils/constants";
 import { GameContext } from "../contexts/game-context";
 import Cats from "../components/cats";
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               {nftsLoading ? (
                 <Loading />
               ) : (
-                <> {nfts?.length ? <Cats /> : <ClaimKitten />}</>
+                <> {nfts?.length ? <Cats /> : <ClaimMeloshians />}</>
               )}
             </>
           )}

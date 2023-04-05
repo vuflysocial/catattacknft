@@ -1,4 +1,4 @@
-import { BaseGoerli } from "@thirdweb-dev/chains";
+import { Binance } from "@thirdweb-dev/chains";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 // This is the chain your dApp will work on.
-const activeChain = BaseGoerli;
+const activeChain = Binance;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

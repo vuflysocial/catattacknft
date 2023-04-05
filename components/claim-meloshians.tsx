@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useContext, useState } from "react";
 import { GameContext } from "../contexts/game-context";
 import { CONTRACT_ADDR } from "../utils/constants";
-import ClaimKittenButton from "./claim-kitten-button";
+import ClaimMeloshiansButton from "./claim-meloshians-button";
 
-const ClaimKitten: React.FC = () => {
+const ClaimMeloshians: React.FC = () => {
   const { refetch } = useContext(GameContext);
   const [error, setError] = useState<Error | null>(null);
 
@@ -20,7 +20,7 @@ const ClaimKitten: React.FC = () => {
               "linear-gradient(73.59deg, #C339AC 42.64%, #CD4CB5 54%, #E173C7 77.46%)",
           }}
         >
-          Claim your kitten
+          Claim your Meloshians
         </span>{" "}
         to get started
       </h1>
@@ -32,9 +32,9 @@ const ClaimKitten: React.FC = () => {
           alt="Cat Attack"
         />
       </div>
-      <ClaimKittenButton />
+      <ClaimMeloshiansButton />
     </div>
   );
 };
 
-export default ClaimKitten;
+export default ClaimMeloshians;

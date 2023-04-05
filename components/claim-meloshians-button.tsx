@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { GameContext } from "../contexts/game-context";
 import { CONTRACT_ADDR } from "../utils/constants";
 
-const ClaimKittenButton: React.FC = () => {
+const ClaimMeloshiansButton: React.FC = () => {
   const { refetch } = useContext(GameContext);
   const [error, setError] = useState<Error | null>(null);
 
@@ -13,12 +13,12 @@ const ClaimKittenButton: React.FC = () => {
       <Web3Button
         className="mt-6 !bg-white !text-black !border-0 !py-2.5"
         contractAddress={CONTRACT_ADDR}
-        action={(contract) => contract.call("claimKitten")}
+        action={(contract) => contract.call("claimMeloshians")}
         onError={(error) => setError(error)}
         onSubmit={() => setError(null)}
         onSuccess={() => refetch()}
       >
-        Claim Kitten
+        Claim Meloshians
       </Web3Button>
       {error && (
         <p className="mt-2 text-xs first-letter:capitalize text-red-400 max-w-xs text-center">
@@ -29,4 +29,4 @@ const ClaimKittenButton: React.FC = () => {
   );
 };
 
-export default ClaimKittenButton;
+export default ClaimMeloshiansButton;

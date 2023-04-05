@@ -2,7 +2,7 @@ import { ConnectWallet, ThirdwebNftMedia } from "@thirdweb-dev/react";
 import { useContext, useMemo } from "react";
 import { GameContext } from "../contexts/game-context";
 import Cat from "./cat";
-import ClaimKittenButton from "./claim-kitten-button";
+import ClaimMeloshiansButton from "./claim-meloshians-button";
 
 const Cats: React.FC = () => {
   const { nfts, playerScore } = useContext(GameContext);
@@ -60,7 +60,7 @@ const Cats: React.FC = () => {
               </span>
             </p>
             <p className="text-gray-500"></p>
-            <ClaimKittenButton />
+            <ClaimMeloshiansButton />
           </div>
         )}
       </div>
